@@ -29,7 +29,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch pixelstar_a70q-user
+lunch pixelstar_a70q-ap2a-user
 echo "============="
 
 # Make cleaninstall
