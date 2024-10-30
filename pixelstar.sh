@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b pixelstar https://github.com/ij-israfil/local_manifests .repo/local_manifests
+git clone -b PixelStarOS https://github.com/LynxSlash/manifests .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,7 +19,7 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=Lynx
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Dhaka
 echo "======= Export Done ======"
@@ -29,7 +29,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch pixelstar_RMX1901-user
+lunch pixelstar_a70q-user
 echo "============="
 
 # Make cleaninstall
