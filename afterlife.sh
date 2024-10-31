@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b afterlife https://github.com/ij-israfil/local_manifests .repo/local_manifests
+git clone -b AfterlifeOS https://github.com/LynxSlash/manifests .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,12 +19,11 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=lynx
 export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
 echo "======= Export Done ======"
 
 #build the rom
 . build/envsetup.sh
 m installclean
-goafterlife RMX1901
+goafterlife a70q
