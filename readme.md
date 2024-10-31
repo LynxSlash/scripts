@@ -30,9 +30,9 @@ crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/script
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/main/pixelstar.sh | bash"
 ```
-# Pixelage Command:
+# Pixelos Command:
 ```
-crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/main/pixelage.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/main/pixelos.sh | bash"
 ```
 # Rising Command:
 ```
