@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # Rom source repo
-repo init --depth=1 -u https://github.com/ProjectPixelage/android_manifest.git -b 15 --git-lfs
+repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b pixelage https://github.com/ij-israfil/local_manifests .repo/local_manifests
+git clone -b pos14 https://github.com/LynxSlash/manifests .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -19,10 +19,10 @@ echo "============================"
 echo "============================"
 
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=lynx
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Dhaka
-export PIXELAGE_BUILD=RMX1901
+ALLOW_MISSING_DEPENDENCIES=TRUE
 echo "======= Export Done ======"
 
 # Set up build environment
@@ -30,7 +30,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch pixelage_RMX1901-ap3a-user
+lunch aosp_a70q-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
