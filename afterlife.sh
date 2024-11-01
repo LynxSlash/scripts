@@ -21,6 +21,7 @@ echo "============================"
 # Export
 export BUILD_USERNAME=lynx
 export BUILD_HOSTNAME=crave
+export ALLOW_MISSING_DEPENDENCIES=TRUE
 echo "======= Export Done ======"
 
 #build the rom
