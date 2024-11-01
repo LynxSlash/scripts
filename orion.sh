@@ -22,6 +22,7 @@ echo "============================"
 export BUILD_USERNAME=ij-israfil
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Dhaka
+export ALLOW_MISSING_DEPENDENCIES=TRUE
 echo "======= Export Done ======"
 
 # Set up build environment
