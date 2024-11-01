@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b orion-14 https://github.com/ij-israfil/local_manifests .repo/local_manifests
+git clone -b lineage-21 https://github.com/LynxSlash/Panda_local_manifests .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -18,8 +18,13 @@ echo "============================"
 /opt/crave/resync.sh
 echo "============================"
 
+# remove useless repositories
+rm -rf hardware/samsung/AdvancedDisplay
+rm -rf hardware/samsung/doze
+echo "============================"
+
 # Export
-export BUILD_USERNAME=ij-israfil
+export BUILD_USERNAME=lynx
 export BUILD_HOSTNAME=crave
 export TZ=Asia/Dhaka
 export ALLOW_MISSING_DEPENDENCIES=TRUE
@@ -30,7 +35,7 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch orion_RMX1901-ap2a-user
+lunch orion_a70q-ap2a-userdebug
 echo "============="
 
 # Make cleaninstall
