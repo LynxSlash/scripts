@@ -1,46 +1,43 @@
 #!/bin/bash
 
+# Remove existing local manifests
 rm -rf .repo/local_manifests/
 
-# Rom source repo
+# Initialize the ROM source repository
 repo init --depth=1 -u https://github.com/OrionOS-prjkt/android -b 14.0 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Clone local_manifests repository
-git clone -b lineage-21 https://github.com/LynxSlash/Panda_local_manifests .repo/local_manifests
-echo "============================"
-echo "Local manifest clone success"
-echo "============================"
-
 # Sync the repositories
 /opt/crave/resync.sh
 echo "============================"
 
-# remove useless repositories
-rm -rf hardware/samsung/AdvancedDisplay
-rm -rf hardware/samsung/doze
-echo "============================"
-
-# Export
-export BUILD_USERNAME=lynx
-export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
-export ALLOW_MISSING_DEPENDENCIES=TRUE
+# Export environment variables
+export ORION_MAINTAINER="Lynx"
+export ORION_MAINTAINER_LINK="t.me/AliLynx"
+export ORION_BUILD_TYPE="UNOFFICIAL"
+export ORION_GAPPS=true
+export TARGET_ENABLE_BLUR=true
+export TARGET_BOOT_ANIMATION_RES=1080
+export TARGET_HAS_UDFPS=true
+export BUILD_GOOGLE_CONTACTS=true
+export BUILD_GOOGLE_DIALER=true
+export BUILD_GOOGLE_MESSAGE=true
+export ALLOW_MISSING_DEPENDENCIES=true
 echo "======= Export Done ======"
 
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-lunch orion_a70q-ap2a-userdebug
+# Lunch command
+lunch lineage_a70q-ap2a-userdebug
 echo "============="
 
-# Make cleaninstall
-make installclean
+# Clean previous build files
+mka installclean
 echo "============="
 
-# Build rom
+# Build the ROM
 mka space
