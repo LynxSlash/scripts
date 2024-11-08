@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone -b pos14 https://github.com/LynxSlash/manifests .repo/local_manifests
+git clone -b pos hhttps://github.com/LynxSlash/Panda_local_manifests .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
