@@ -1,6 +1,12 @@
 #!/bin/bash
-
+remove old repos
 rm -rf .repo/local_manifests/
+rm -rf device/samsung/a70q
+rm -rf device/samsung/sm6150-common
+rm -rf kernel/samsung/sm6150
+rm -rf vendor/samsung/a70q
+rm -rf vendor/samsung/sm6150-common
+rm -rf hardware/samsung
 
 # Rom source repo
 git lfs install && repo init -u https://github.com/TenX-OS/manifest.git -b fourteen --git-lfs
