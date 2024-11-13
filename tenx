@@ -8,8 +8,13 @@ echo "=================="
 echo "Repo init success"
 echo "=================="
 
-# Clone local_manifests repository
-git clone -b 10x https://github.com/LynxSlash/manifests .repo/local_manifests
+# Clone device repositorys
+git clone -b tenx https://github.com/LynxSlash/android_device_samsung_a70q device/samsung/a70q
+git clone -b lineage-21 https://github.com/LynxSlash/android_device_samsung_sm6150-common device/samsung/sm6150-common
+git clone -b lineage-21 https://github.com/LineageOS/android_kernel_samsung_sm6150 kernel/samsung/sm6150
+git clone -b lineage-21 https://github.com/a70q-lineage/proprietary_vendor_samsung_a70q vendor/samsung/a70q
+git clone -b lineage-21 https://github.com/a70q-lineage/proprietary_vendor_samsung_sm6150-common vendor/samsung/sm6150-common
+git clone -b lineage-21.0 https://github.com/Linux4/android_hardware_samsung hardware/samsung
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
