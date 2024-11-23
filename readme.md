@@ -1,3 +1,7 @@
+# TenX Command:
+```
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/arrow.sh | bash"
+```
 # AlphaDroid Command:
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/main/alpha.sh | bash"
@@ -44,5 +48,5 @@ crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/script
 ```
 # TenX Command:
 ```
-crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/tenx | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/tenx.sh | bash"
 ```
