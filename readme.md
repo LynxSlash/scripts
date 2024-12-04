@@ -46,6 +46,10 @@ crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/script
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/main/blaze.sh | bash"
 ```
+# Qassa Command:
+```
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/qassa.sh | bash"
+```
 # TenX Command:
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/tenx.sh | bash"
