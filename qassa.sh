@@ -9,18 +9,15 @@ rm -rf vendor/samsung/sm6150-common
 rm -rf hardware/samsung
 
 # Rom source repo
-repo init -u ssh://git@github.com/keepQASSA/manifest -b Q
+repo init -u https://github.com/LineageOS/android.git -b lineage-17.1
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone device repositorys
-git clone -b tenx https://github.com/LynxSlash/android_device_samsung_a70q device/samsung/a70q
-git clone -b lineage-21 https://github.com/LynxSlash/android_device_samsung_sm6150-common device/samsung/sm6150-common
-git clone -b lineage-21 https://github.com/LineageOS/android_kernel_samsung_sm6150 kernel/samsung/sm6150
-git clone -b lineage-21 https://github.com/a70q-lineage/proprietary_vendor_samsung_a70q vendor/samsung/a70q
-git clone -b lineage-21 https://github.com/a70q-lineage/proprietary_vendor_samsung_sm6150-common vendor/samsung/sm6150-common
-git clone -b lineage-21.0 https://github.com/Linux4/android_hardware_samsung hardware/samsung
+git clone -b cr10 https://github.com/sm7150/android_device_samsung_a70q device/samsung/a70q
+git clone -b lineage-17.1 https://github.com/sm7150/a70qkernel kernel/samsung/sm6150
+git clone -b lineage-17.1 https://github.com/sm7150/proprietary_vendor_samsung_a70q vendor/samsung
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
