@@ -18,6 +18,13 @@ echo "============================"
 /opt/crave/resync.sh
 echo "============================"
 
+# Remove Samsung stuff
+rm -rf device/samsung/sm6150-common/livedisplay
+rm -rf hardware/samsung/hidl/livedisplay
+rn -rf hardware/samsung/AdvancedDisplay
+rm -rf hardware/samsung/doze
+rm -rf hardware/ril/libril
+
 # Export
 export BUILD_USERNAME=Lynx
 export BUILD_HOSTNAME=crave
