@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export ALLOW_MISSING_DEPENDENCIES=TRUE
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=TRUE
 echo "======= Export Done ======"
