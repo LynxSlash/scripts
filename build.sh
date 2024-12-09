@@ -24,4 +24,4 @@ lunch pixelstar_a70q-eng
 
 mka bacon
 
-lunch pixelstar_a70q-userdebugm
+lunch pixelstar_a70q-userdebug
