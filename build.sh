@@ -12,10 +12,6 @@ echo "====== Envsetup Done ======="
 lunch pixelstar_a70q-ap2a-eng
 echo "============="
 
-# Make cleaninstall
-make installclean
-echo "============="
-
 # Build rom
 mka bacon
 
