@@ -12,9 +12,5 @@ echo "====== Envsetup Done ======="
 lunch aosp_a70q-ap2a-userdebug
 echo "============="
 
-# Make cleaninstall
-make installclean
-echo "============="
-
 # Build rom
 make bacon
