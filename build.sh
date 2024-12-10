@@ -9,17 +9,12 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch pixelstar_a70q-ap2a-eng
+lunch aosp_a70q-ap2a-userdebug
+echo "============="
+
+# Make cleaninstall
+make installclean
 echo "============="
 
 # Build rom
-mka bacon
-
-
-lunch pixelstar_a70q-eng
-
-mka bacon
-
-lunch pixelstar_a70q-userdebug
-
-mka bacon
+make bacon
