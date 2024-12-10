@@ -28,8 +28,9 @@ rm -rf hardware/ril/libril
 # Export
 export BUILD_USERNAME=lynx
 export BUILD_HOSTNAME=crave
-export TZ=Asia/Dhaka
+export TZ=Asia/Karachi
 export ALLOW_MISSING_DEPENDENCIES=TRUE
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES=TRUE
 echo "======= Export Done ======"
 
 # Set up build environment
