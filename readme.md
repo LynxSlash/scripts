@@ -54,3 +54,7 @@ crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/script
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/tenx.sh | bash"
 ```
+# yaapos Command:
+```
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/yaap.sh | bash"
+```
