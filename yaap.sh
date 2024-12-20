@@ -38,9 +38,7 @@ echo "======= Export Done ======"
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# Lunch
-lunch yaap_a70q-ap2a-userdebug
-echo "============="
 # build
 lunch yaap_a70q-userdebug && m yaap
-echo "============="
+echo "====== build Done ======="
+
