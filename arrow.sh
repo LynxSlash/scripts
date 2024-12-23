@@ -29,6 +29,8 @@ echo "============================"
 /opt/crave/resync.sh
 echo "============================"
 
+# remove already defined modules
+rm -rf hardware/ril/libril
 # Export
 export TZ=Asia/Karachi
 export ALLOW_MISSING_DEPENDENCIES=TRUE
