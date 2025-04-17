@@ -49,4 +49,4 @@ make installclean
 echo "============="
 
 # Build rom
-make bacon
+mka bacon -j$(nproc --all) | tee log.txt
