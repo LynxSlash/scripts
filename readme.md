@@ -1,3 +1,7 @@
+# Aosp Command:
+```
+crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/aosp.sh | bash"
+```
 # Arrow-T_ext Command:
 ```
 crave run --no-patch -- "curl https://raw.githubusercontent.com/LynxSlash/scripts/refs/heads/main/arrow.sh | bash"
