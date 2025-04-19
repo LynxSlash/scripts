@@ -41,7 +41,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch aosp_a70q-eng
+lunch aosp_a70q-userdebug
+
 echo "============="
 
 # Make cleaninstall
